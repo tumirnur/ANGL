@@ -1,14 +1,14 @@
 // Офлайн-режим.
 // Файлы приложения: сначала сеть (чтобы обновления приходили сразу), без сети — из кэша.
 // Шрифты Google: из кэша, после первой загрузки работают и без интернета.
-const VERSION = 'grind-v5';
+const VERSION = 'grind-v6';
 const FONTS = 'grind-fonts-v1';
 const SHELL = [
-  './', 'index.html', 'manifest.webmanifest', 'css/app.css',
-  'js/app.js', 'js/ui.js', 'js/plan.js', 'js/state.js', 'js/files.js', 'js/viewer.js',
-  'js/fsrs.js', 'js/speech.js', 'js/sync.js', 'js/cloud.js', 'js/config.js',
-  'vendor/pdf.min.mjs', 'vendor/pdf.worker.min.mjs',
-  'icons/icon-192.png', 'icons/icon-512.png', 'icons/icon-maskable-512.png',
+  './', 'index.html', 'manifest.webmanifest', 'app.css',
+  'app.js', 'ui.js', 'plan.js', 'state.js', 'files.js', 'viewer.js',
+  'fsrs.js', 'speech.js', 'sync.js', 'cloud.js', 'config.js',
+  'pdf.min.mjs', 'pdf.worker.min.mjs',
+  'icon-192.png', 'icon-512.png', 'icon-maskable-512.png',
 ];
 
 self.addEventListener('install', (e) => {
